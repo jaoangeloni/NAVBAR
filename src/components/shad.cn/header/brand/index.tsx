@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function HeaderBrand() {
   return (
-    <Link href="/inicio" className="mr-8 hover:bg-accent rounded-md py-2 px-4">
+    <Link href="/inicio" className="mr-8">
       <div className="flex items-center justify-center gap-3">
         <Image
           src={APP_LOGO?.logo}
