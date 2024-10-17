@@ -1,3 +1,3 @@
-export default function Home() {
+export default function Concluidas() {
   return <div className="w-full"></div>;
 }
