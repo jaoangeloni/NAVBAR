@@ -7,7 +7,7 @@ export function AppList() {
   return (
     <div className="grid grid-cols-3 items-center justify-center p-4 w-full h-full overflow-auto">
       {APPS_LIST(APP_CONFIG?.environment).map((app) => (
-        <div key={app?.tag} className="flex items-center justify-center">
+        <div key={app?.tag} className="flex items-center justify-center h-32">
           <Link href={app?.url}>
             <div
               key={app?.tag}

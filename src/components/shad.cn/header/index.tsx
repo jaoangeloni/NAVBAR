@@ -1,7 +1,6 @@
 import { HeaderBrand } from "./brand";
 import { AppsDropdownMenu } from "./dropdown";
 import { NavItems } from "./navbar";
-import { UserDropDown } from "./user";
 
 export function Header() {
   return (
@@ -18,7 +17,7 @@ export function Header() {
       </div>
       <div className="flex gap-4">
         <AppsDropdownMenu />
-        <UserDropDown />
+        {/* User action */}
       </div>
     </nav>
   );

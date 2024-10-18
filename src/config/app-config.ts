@@ -1,1 +1,4 @@
-export const APP_CONFIG = { environment: "homolog" };
+export const APP_CONFIG = {
+  basePath: "/",
+  environment: "homolog",
+};
