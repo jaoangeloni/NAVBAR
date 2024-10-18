@@ -8,7 +8,7 @@ export function Header() {
     <nav
       className="flex items-center justify-between 
       w-full 
-      px-4 md:px-8 py-4 
+      px-4 md:px-8 py-2
       border-b-1 border-foreground-200 
       bg-background"
     >

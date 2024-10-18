@@ -20,22 +20,39 @@ export const NAV_BAR_ITEMS = [
         path: "/Teste",
         description: "testeteste",
       },
-    ],
-  },
-  {
-    label: "Teste",
-    tag: "c",
-    path: "",
-    items: [
       {
         label: "Teste",
-        tag: "d",
+        tag: "b",
         path: "/Teste",
         description: "testeteste",
       },
       {
         label: "Teste",
-        tag: "e",
+        tag: "b",
+        path: "/Teste",
+        description: "testeteste",
+      },
+      {
+        label: "Teste",
+        tag: "b",
+        path: "/Teste",
+        description: "testeteste",
+      },
+      {
+        label: "Teste",
+        tag: "b",
+        path: "/Teste",
+        description: "testeteste",
+      },
+      {
+        label: "Teste",
+        tag: "b",
+        path: "/Teste",
+        description: "testeteste",
+      },
+      {
+        label: "Teste",
+        tag: "b",
         path: "/Teste",
         description: "testeteste",
       },
