@@ -19,7 +19,7 @@ export function AppList() {
                 style={{ objectFit: "contain" }}
                 width={44}
               />
-              <p className="text-xs text-center font-medium">{app?.label}</p>
+              <p className="text-xs text-center">{app?.label}</p>
             </div>
           </Link>
         </div>
