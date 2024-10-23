@@ -1,5 +1,5 @@
-import { APPS_LIST } from "@/config/header/apps-list";
-import { APP_CONFIG } from "@/config/app-config";
+import { APPS_LIST } from "@/config/header/apps.list";
+import { APP_CONFIG } from "@/config/app.config";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,8 +17,8 @@ export function AppList() {
                 src={app?.icon}
                 alt={app?.label}
                 style={{ objectFit: "contain" }}
-                width={44}
-                height={44}
+                width={48}
+                height={48}
               />
               <p className="text-xs text-center font-medium">{app?.label}</p>
             </div>

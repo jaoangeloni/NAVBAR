@@ -1,5 +1,5 @@
-import { APP_BRAND } from "@/config/header/app-brand";
-import { APP_CONFIG } from "@/config/app-config";
+import { APP_BRAND } from "@/config/header/app.brand";
+import { APP_CONFIG } from "@/config/app.config";
 import Link from "next/link";
 import Image from "next/image";
 

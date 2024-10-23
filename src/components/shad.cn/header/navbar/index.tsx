@@ -12,7 +12,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import React from "react";
-import { NAV_BAR_ITEMS } from "@/config/header/nav-bar-items";
+import { NAV_BAR_ITEMS } from "@/config/header/navbar.items";
 import { ListItem } from "./dropdownItems";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
