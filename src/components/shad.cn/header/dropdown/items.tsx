@@ -11,16 +11,15 @@ export function AppList() {
           <Link href={app?.url}>
             <div
               key={app?.tag}
-              className="p-4 flex flex-col gap-2 items-center justify-center hover:bg-accent cursor-pointer rounded-md w-24 h-24"
+              className="flex flex-col gap-2 items-center justify-center hover:bg-accent cursor-pointer rounded-md w-24 h-24"
             >
               <Image
                 src={app?.icon}
                 alt={app?.label}
                 style={{ objectFit: "contain" }}
-                width={48}
-                height={48}
+                width={44}
               />
-              <p className="text-xs text-center font-medium">{app?.label}</p>
+              <p className="text-xs text-center">{app?.label}</p>
             </div>
           </Link>
         </div>

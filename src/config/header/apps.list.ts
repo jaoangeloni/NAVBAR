@@ -1,20 +1,15 @@
-import megtv from "@/assets/apps/megtv.png";
-import apontamentos from "@/assets/apps/apontamentos.png";
-import academia from "@/assets/apps/academia.png";
-import outlook from "@/assets/apps/outlook.png";
-import eventos from "@/assets/apps/eventos.png";
-import cincoS from "@/assets/apps/5s.png";
-import portal from "@/assets/apps/portal.png";
+import megtv from "@/assets/apps/logo-megtv.png";
+import apontamentos from "@/assets/apps/logo-apontamentos.png";
+import academia from "@/assets/apps/logo-academia.png";
+import outlook from "@/assets/apps/logo-webmail.png";
+import eventos from "@/assets/apps/logo-eventos.png";
+import cincoS from "@/assets/apps/logo-cincoesse.png";
+import portal from "@/assets/apps/logo-portal.png";
+import milldesk from "@/assets/apps/logo-milldesk.png";
 
 export const APPS_LIST = (environment: string) => {
   return environment === "production"
     ? [
-        {
-          label: "Outlook",
-          icon: outlook,
-          tag: "outlook",
-          url: "https://outlook.office.com/mail/",
-        },
         {
           label: "Portal Viva",
           icon: portal,
@@ -46,6 +41,18 @@ export const APPS_LIST = (environment: string) => {
           url: "https://apps.terraviva.agr.br/eventos",
         },
         {
+          label: "Outlook",
+          icon: outlook,
+          tag: "outlook",
+          url: "https://outlook.office.com/mail/",
+        },
+        {
+          label: "Milldesk",
+          icon: milldesk,
+          tag: "milldesk",
+          url: "https://www.milldesk.com/flex/milldesk/csc/terraviva/",
+        },
+        {
           label: "Academia TV",
           icon: academia,
           tag: "academia",
@@ -53,12 +60,6 @@ export const APPS_LIST = (environment: string) => {
         },
       ]
     : [
-        {
-          label: "Outlook",
-          icon: outlook,
-          tag: "outlook",
-          url: "https://outlook.office.com/mail/",
-        },
         {
           label: "Portal Viva",
           icon: portal,
@@ -90,7 +91,19 @@ export const APPS_LIST = (environment: string) => {
           url: "https://apps.hml.terraviva.agr.br/eventos",
         },
         {
-          label: "Academia",
+          label: "Outlook",
+          icon: outlook,
+          tag: "outlook",
+          url: "https://outlook.office.com/mail/",
+        },
+        {
+          label: "Milldesk",
+          icon: milldesk,
+          tag: "milldesk",
+          url: "https://www.milldesk.com/flex/milldesk/csc/terraviva/",
+        },
+        {
+          label: "Academia TV",
           icon: academia,
           tag: "academia",
           url: "https://academia.terraviva.agr.br/",
