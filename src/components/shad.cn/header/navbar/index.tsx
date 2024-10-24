@@ -19,11 +19,19 @@ import { cn } from "@/lib/utils";
 
 export function NavItems() {
   const path = usePathname();
+  const pathArray = path?.split("/");
+  const currentPath = `/${pathArray[pathArray.length - 1]}`;
 
-  const isActive = (itemPath: string) => {
+  const isActive = (itemPath: string, isDropdown: boolean) => {
     return cn(
       "focus:bg-transparent focus:text-primary-500 hover:bg-transparent hover:text-primary-500",
-      path?.includes(itemPath) ? "bg-transparent text-primary-500" : ""
+      isDropdown
+        ? path.includes(itemPath)
+          ? "bg-transparent text-primary-500"
+          : ""
+        : currentPath === itemPath
+        ? "bg-transparent text-primary-500"
+        : ""
     );
   };
 
@@ -37,13 +45,13 @@ export function NavItems() {
                 className={`
                 data-[active]:bg-bg-transparent data-[state=open]:bg-transparent
                 data-[active]:text-primary-500 data-[state=open]:text-primary-500
-                ${isActive(item?.path)}
+                ${isActive(item?.path, true)}
               `}
               >
                 {item?.label}
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[200px] gap-3 p-2 md:w-[250px] md:grid-cols-1 lg:w-[300px] ">
+                <ul className="grid w-[200px] gap-3 p-2 md:w-[250px] md:grid-cols-1 lg:w-[300px] bg-white">
                   {item?.items?.map((items) => (
                     <ListItem
                       key={items.tag}
@@ -51,7 +59,7 @@ export function NavItems() {
                       href={item?.path + items?.path}
                       className={`hover:text-primary-500 focus:text-primary-500 
                         ${
-                          path.includes(items?.path) ? "text-primary-500" : ""
+                          currentPath === items?.path ? "text-primary-500" : ""
                         }`}
                     >
                       {items?.description}
@@ -66,7 +74,7 @@ export function NavItems() {
                 <NavigationMenuLink
                   className={`
                     ${navigationMenuTriggerStyle()}
-                    ${isActive(item?.path)}
+                    ${isActive(item?.path, false)}
                   `}
                 >
                   {item?.label}
